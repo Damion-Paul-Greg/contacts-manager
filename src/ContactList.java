@@ -55,10 +55,6 @@ public class ContactList {
 
                     contact.setPhone(phone.toLowerCase());
 
-                    System.out.println("Enter Contact Notes: ");
-
-                    String notes = reader.next();
-                    contact.setNotes(notes.toLowerCase());
 
                     contacts.add(contact);
 
@@ -112,7 +108,7 @@ public class ContactList {
                         }
 
                         // Print sorted contacts to console.
-                        System.out.println("Name          |         Phone Number\n- - - - - - - - - - - - - - - - - - -");
+                        System.out.println("Name          |     Phone Number\n- - - - - - - - - - - - - - - - - - -");
                         for (String fileLine : lines) {
                             String outlook = fileLine.substring(0, 1).toUpperCase()
                                     + fileLine.substring(1);
@@ -188,4 +184,5 @@ public class ContactList {
     private static void writeContactToFile() {
     }
 }
+
 
